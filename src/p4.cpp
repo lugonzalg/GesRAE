@@ -45,11 +45,20 @@ void Editar_edificio(VectorEdificios vector_edificios) {
     return ;
   }
 
-  vector_edificios[idx - 1].Editar();
+  vector_edificios[idx - 1].Editar(idx);
 
 }
 
-void Listar_edificios() {}
+void Listar_edificios(VectorEdificios vector_edificios) {
+    printf("%-5s%-10s%-16s%-16s%s\n\n", "Id", "Nombre", "Aptos Basicos", "Aptos Normales", "Aptos de Lujo");
+
+    for (int idx = 0; idx < LongitudVectorEdificios; idx++) {
+
+      if (vector_edificios[idx].Id()) {
+        vector_edificios[idx].PrintParaLista();
+      }
+    }
+}
 void Apartamentos_disponibles() {}
 void Reservar_apartamento() {}
 void Reservas_mensuales_apartamento() {}
@@ -58,6 +67,7 @@ static int main_loop() {
   Bufer input_usuario = {0};
   VectorEdificios vector_edificios;
 
+  memset(vector_edificios, 0, sizeof(vector_edificios));
   while (1) {
     Intro();
     fflush(stdout);
@@ -69,6 +79,7 @@ static int main_loop() {
         Editar_edificio(vector_edificios);
         break ;
       case 'L':
+        Listar_edificios(vector_edificios);
         break ;
       case 'A':
         break ;
