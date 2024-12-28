@@ -37,6 +37,11 @@ int TADEdificio::_validar_numeros(Bufer input_usuario) {
   return 0;
 }
 
+int TADEdificio::Id() { return this->_id; }
+int TADEdificio::ApartamentosBasicos() { return this->_apartamentos_basicos; }
+int TADEdificio::ApartamentosNormales() { return this->_apartamentos_normales; }
+int TADEdificio::ApartamentosLujo() { return this->_apartamentos_lujo; }
+
 void TADEdificio::Print() {
   printf("Nombre: %s\n", this->_nombre);
   printf("Apartamentos Basicos: %d\n", this->_apartamentos_basicos);
@@ -44,7 +49,16 @@ void TADEdificio::Print() {
   printf("Apartamentos de Lujo: %d\n", this->_apartamentos_lujo);
 }
 
-void TADEdificio::Editar() {
+void TADEdificio::PrintParaLista() {
+  printf("%-5d%-15s%-16d%-16d%d\n",
+         this->_id,
+         this->_nombre,
+         this->_apartamentos_basicos,
+         this->_apartamentos_normales,
+         this->_apartamentos_lujo);
+}
+
+void TADEdificio::Editar(int id) {
   Bufer input_usuario = {0};
   int longitud;
 
@@ -88,10 +102,11 @@ void TADEdificio::Editar() {
   if ((this->_apartamentos_basicos + this->_apartamentos_normales + this->_apartamentos_lujo) == 0
       || this->_apartamentos_basicos < 0 || this->_apartamentos_normales < 0 || this->_apartamentos_lujo < 0) {
     fprintf(stderr, "[ERROR] - Los valores de los apartamentos son nulos o negativos!\n\n");
-    this->id = 0;
+    this->_id = 0;
     return ;
   }
 
+  this->_id = id;
   printf("Edificio editado de forma correcta!\n");
   this->Print();
 }
