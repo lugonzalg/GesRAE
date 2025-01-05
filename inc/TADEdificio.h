@@ -8,27 +8,34 @@
 
 # pragma once
 
-const int LongitudBufer = 30;
+#include "TADApartamento.h"
+#include "TADDatosEdificio.h"
 
-typedef char Bufer[LongitudBufer];
+const int LongitudVectorApartamentos = 20;
+
+typedef TADApartamento  VectorApartamentos[LongitudVectorApartamentos];
 
 typedef struct TADEdificio {
 
-    void Editar(int id);
-    void Print();
-    void PrintParaLista();
-    int Id();
-    int ApartamentosBasicos();
-    int ApartamentosNormales();
-    int ApartamentosLujo();
+    void            constructor(PtrDatosEdificio datosEdificio);
+    void            print();
+    void            printParaList(int lontiudMaximaNombre);
+    PtrApartamento  asignarReserva(PtrReserva reserva);
+    int             obtenerId();
+    PtrChar         obtenerNombre();
+    void            reset();
+    int             obtenerApartamentoDisponible(TipoApartamento tipoApartamento);
+    void            obtenerApartamentosLibresPorFecha(PtrReserva reserva, VectorTipoApartamento apartamentosLibres);
+    int             printarReservasApartamentoPorFecha(TipoApartamento tipoApartamento, int offset, int mes, int periodoAnual);
 
   private:
-    int   _id;
-    Bufer _nombre;
-    int   _apartamentos_basicos;
-    int   _apartamentos_normales;
-    int   _apartamentos_lujo;
-
-    int   _validar_palabra(Bufer input_usuario);
-    int   _validar_numeros(Bufer input_usuario);
+    int                   id;
+    TipoVectorChars       nombre;
+    VectorTipoApartamento numeroTipoApartamento;
+    int                   totalApartamentos;
+    VectorApartamentos    apartamentos;
+    void                  borrarApartamentos();
+    PtrReserva            crearReserva(TipoApartamento tipoApartamento, PtrTm fecha, int periodo);
 };
+
+typedef TADEdificio     *PtrEdificio;

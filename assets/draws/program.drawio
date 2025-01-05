@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17" pages="4">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17" pages="6">
   <diagram name="Página-1" id="ET7IwDtPdb3O7M98OSvV">
     <mxGraphModel dx="989" dy="577" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -152,7 +152,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="DZKaNBsUsk9eYr7scm4g-2" value="TADEdificio" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="40" width="200" height="268" as="geometry" />
+          <mxGeometry x="40" y="40" width="200" height="312" as="geometry" />
         </mxCell>
         <mxCell id="DZKaNBsUsk9eYr7scm4g-3" value="+ id: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DZKaNBsUsk9eYr7scm4g-2">
           <mxGeometry y="26" width="200" height="26" as="geometry" />
@@ -169,20 +169,59 @@
         <mxCell id="DZKaNBsUsk9eYr7scm4g-10" value="+ apartamentos_lujo: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DZKaNBsUsk9eYr7scm4g-2">
           <mxGeometry y="130" width="200" height="26" as="geometry" />
         </mxCell>
+        <mxCell id="69kOo5TAouLg3RMgeNR3-1" value="+ _apartamentos: vector&amp;lt;TADApartamentos&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DZKaNBsUsk9eYr7scm4g-2">
+          <mxGeometry y="156" width="200" height="44" as="geometry" />
+        </mxCell>
         <mxCell id="DZKaNBsUsk9eYr7scm4g-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="DZKaNBsUsk9eYr7scm4g-2">
-          <mxGeometry y="156" width="200" height="8" as="geometry" />
+          <mxGeometry y="200" width="200" height="8" as="geometry" />
         </mxCell>
         <mxCell id="DZKaNBsUsk9eYr7scm4g-5" value="+ Nombre(): const char *" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DZKaNBsUsk9eYr7scm4g-2">
-          <mxGeometry y="164" width="200" height="26" as="geometry" />
+          <mxGeometry y="208" width="200" height="26" as="geometry" />
         </mxCell>
         <mxCell id="DZKaNBsUsk9eYr7scm4g-11" value="+ ApartamentosBasicos(): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DZKaNBsUsk9eYr7scm4g-2">
-          <mxGeometry y="190" width="200" height="26" as="geometry" />
+          <mxGeometry y="234" width="200" height="26" as="geometry" />
         </mxCell>
         <mxCell id="DZKaNBsUsk9eYr7scm4g-12" value="+ ApartamentosNormales(): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DZKaNBsUsk9eYr7scm4g-2">
-          <mxGeometry y="216" width="200" height="26" as="geometry" />
+          <mxGeometry y="260" width="200" height="26" as="geometry" />
         </mxCell>
         <mxCell id="DZKaNBsUsk9eYr7scm4g-13" value="+ ApartamentosLujo(): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DZKaNBsUsk9eYr7scm4g-2">
-          <mxGeometry y="242" width="200" height="26" as="geometry" />
+          <mxGeometry y="286" width="200" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lp2g2hMSZ_CSOV2NYOJZ-1" value="TADEdificio" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="40" width="250" height="138" as="geometry" />
+        </mxCell>
+        <mxCell id="lp2g2hMSZ_CSOV2NYOJZ-2" value="+ tipo: TipoApartamento" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lp2g2hMSZ_CSOV2NYOJZ-1">
+          <mxGeometry y="26" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lp2g2hMSZ_CSOV2NYOJZ-3" value="+ reservas* reservas;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lp2g2hMSZ_CSOV2NYOJZ-1">
+          <mxGeometry y="52" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lp2g2hMSZ_CSOV2NYOJZ-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="lp2g2hMSZ_CSOV2NYOJZ-1">
+          <mxGeometry y="78" width="250" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="lp2g2hMSZ_CSOV2NYOJZ-8" value="+ EstaLibre(comienzo, final): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lp2g2hMSZ_CSOV2NYOJZ-1">
+          <mxGeometry y="86" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lp2g2hMSZ_CSOV2NYOJZ-11" value="+ NuevaReserva(comienzo, final): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lp2g2hMSZ_CSOV2NYOJZ-1">
+          <mxGeometry y="112" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lp2g2hMSZ_CSOV2NYOJZ-12" value="TADApartamento" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="260" width="250" height="138" as="geometry" />
+        </mxCell>
+        <mxCell id="lp2g2hMSZ_CSOV2NYOJZ-13" value="+ tipo: TipoApartamento" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lp2g2hMSZ_CSOV2NYOJZ-12">
+          <mxGeometry y="26" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lp2g2hMSZ_CSOV2NYOJZ-14" value="+ reservas* reservas;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lp2g2hMSZ_CSOV2NYOJZ-12">
+          <mxGeometry y="52" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lp2g2hMSZ_CSOV2NYOJZ-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="lp2g2hMSZ_CSOV2NYOJZ-12">
+          <mxGeometry y="78" width="250" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="lp2g2hMSZ_CSOV2NYOJZ-16" value="+ EstaLibre(comienzo, final): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lp2g2hMSZ_CSOV2NYOJZ-12">
+          <mxGeometry y="86" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lp2g2hMSZ_CSOV2NYOJZ-17" value="+ NuevaReserva(comienzo, final): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lp2g2hMSZ_CSOV2NYOJZ-12">
+          <mxGeometry y="112" width="250" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -223,6 +262,70 @@
         </mxCell>
         <mxCell id="tUspn2W5NsvNNiNRLUN_-13" value="Id&amp;nbsp; -&amp;nbsp;&amp;nbsp;Nombre&amp;nbsp; -&amp;nbsp;&amp;nbsp;Aptos Básicos&amp;nbsp; -&amp;nbsp;&amp;nbsp;Aptos Normales&amp;nbsp; -&amp;nbsp;&amp;nbsp;Aptos de Lujo" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="280" y="490" width="430" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="ZS30-DCIahGbP91QAfYZ" name="Página-5">
+    <mxGraphModel dx="1434" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lO--OvDeh3HYDkVbQLkj-1" value="Reservas de hotel" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="354" y="50" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lO--OvDeh3HYDkVbQLkj-3" value="&lt;div style=&quot;&quot;&gt;Reservar Apartamento:&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Identificador de Edificio?&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Tipo de Apartamento (B-Básico/N-Normal/L-Lujo) ?&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Fecha Entrada: Día?&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Fecha Entrada: Mes?&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Fecha Entrada: Año?&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Días de duración de la estancia?&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="220" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="lO--OvDeh3HYDkVbQLkj-4" value="user date input" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="QxeBLCC0ZzmmYPQGkVGe" name="Página-6">
+    <mxGraphModel dx="1434" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cA_OtHdHtZ6ScyAE0vfs-1" value="Editar edificio" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AiE2Pf1tN2Bjv6WZ1kBI-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cA_OtHdHtZ6ScyAE0vfs-2" target="AiE2Pf1tN2Bjv6WZ1kBI-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cA_OtHdHtZ6ScyAE0vfs-2" value="user input" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AiE2Pf1tN2Bjv6WZ1kBI-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AiE2Pf1tN2Bjv6WZ1kBI-1" target="cA_OtHdHtZ6ScyAE0vfs-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AiE2Pf1tN2Bjv6WZ1kBI-1" value="&lt;div style=&quot;&quot;&gt;Editar Edificio:&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Identificador (número entre 1 y 5)?&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Nombre (entre 1 y 20 caracteres)?&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Número de Apartamentos Básicos?&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Número de Apartamentos Normales?&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Número de Apartamentos de Lujo?&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" vertex="1" parent="1">
+          <mxGeometry x="50" y="195" width="220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="AiE2Pf1tN2Bjv6WZ1kBI-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AiE2Pf1tN2Bjv6WZ1kBI-3" target="AiE2Pf1tN2Bjv6WZ1kBI-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AiE2Pf1tN2Bjv6WZ1kBI-3" value="check input values" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AiE2Pf1tN2Bjv6WZ1kBI-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AiE2Pf1tN2Bjv6WZ1kBI-5" target="AiE2Pf1tN2Bjv6WZ1kBI-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AiE2Pf1tN2Bjv6WZ1kBI-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AiE2Pf1tN2Bjv6WZ1kBI-5" target="AiE2Pf1tN2Bjv6WZ1kBI-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AiE2Pf1tN2Bjv6WZ1kBI-5" value="input ok?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="374" y="500" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AiE2Pf1tN2Bjv6WZ1kBI-7" value="end edit option with error" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="514" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AiE2Pf1tN2Bjv6WZ1kBI-9" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="440" y="508" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AiE2Pf1tN2Bjv6WZ1kBI-12" value="assign type to departments" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="354" y="670" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
